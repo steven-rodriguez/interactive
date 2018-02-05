@@ -1,0 +1,89 @@
+
+body {
+  background: black;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#container {
+  max-width: 725px;
+  margin: 0 auto 6em;
+}
+
+#table-of-contents {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background: white;
+  color: black;
+  /* some padding might make it look better */
+  padding: 1em;
+  /* maybe making the font size here smaller will help too */
+  font-size: 1em;
+}
+
+
+a {
+  color: Gold;
+  text-decoration: none;
+  /* By default, links are blue and have an underline.
+     The above CSS changes both those things. */
+}
+
+a:hover {
+  color: white;
+}
+
+#table-of-contents a {
+  color: black;
+  text-decoration: none;
+}
+
+#table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+#table-of-contents ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.7em;
+}
+
+
+h1 {
+  /* here I'm making the title not bold (by default headings are always bold)
+     centered, larger, tighter leading, and with some bottom space or margin */
+  font-weight: normal;
+  text-align: left;
+  font-size: 3em;
+  line-height: 1.1;
+  margin-bottom: 2em;
+}
+
+h2 {
+  /* here I'm making my section headers very clear with a white background.
+     added some padding and removed the default bold again, and
+     added some top margin */
+  background: white;
+  padding: 0.5em;
+  font-weight: normal;
+  color: black;
+  margin-top: 2em;
+}
+
+
+.highlight {
+  background: RosyBrown;
+  color: black;
+  /* or pick a different color */
+}

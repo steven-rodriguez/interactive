@@ -1,0 +1,1157 @@
+/*
+
+Kirby Starterkit
+
+Author: Bastian Allgeier / Sascha Lack
+URL:    http://getkirby.com
+Email:  support@getkirby.com
+
+*/
+
+/*
+/* Source Sans Pro
+--------------------------------------------------
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/sourcesanspro-300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/sourcesanspro-400.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/sourcesanspro-600.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
+}
+
+
+/* Reset
+--------------------------------------------------
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+/* Pix
+--------------------------------------------------
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* Links
+--------------------------------------------------
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s, background .3s, border .3s;
+}
+a:hover {
+  color: red;
+}
+
+
+/* Clearfix
+--------------------------------------------------
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Site
+--------------------------------------------------
+html {
+  height: 101%;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0 auto;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 1.5em;
+  max-width: 50em;
+  background: #fff;
+  color: #222;
+}
+
+
+/* Header
+--------------------------------------------------
+.header {
+  border-bottom: 2px solid red;
+  margin-bottom: 1.5em;
+}
+.logo {
+  display: block;
+  margin-bottom: 1.5em;
+}
+.logo img {
+  width: 2em;
+}
+
+
+/* Navigation
+--------------------------------------------------
+.menu a {
+  display: block;
+  color: #222;
+}
+.menu a:hover {
+  color: red;
+  text-decoration: none;
+}
+.menu .active {
+  color: red;
+}
+.menu li {
+  list-style: none;
+}
+.menu > li {
+  position: relative;
+}
+.menu > li > a {
+  padding: .35em 0;
+  border-top: 1px solid #ddd;
+  font-weight: 600;
+}
+
+.submenu {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  left: 1em;
+}
+.submenu:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: -.5em;
+  left: 0;
+  border-top: .5em solid transparent;
+  border-bottom: .5em solid transparent;
+  border-left: .5em solid #222;
+}
+.submenu li {
+  border-bottom: 1px solid #444;
+}
+.submenu a {
+  padding: .5em 1.5em;
+  font-size: .9em;
+  font-weight: 300;
+  color: #fff;
+  background: #222;
+  white-space: nowrap;
+}
+.submenu a:hover {
+  background: #333;
+  color: #fff;
+}
+
+@media screen and (min-width: 40em) {
+  body {
+    padding: 3em;
+  }
+  .logo {
+    float: left;
+  }
+  .menu {
+    float: right;
+    margin-right: -1em;
+  }
+  .menu > li {
+    float: left;
+  }
+  .menu > li > a {
+    padding: .35em 1em;
+    border: 0;
+  }
+  .menu > li:hover .submenu {
+    display: block;
+  }
+}
+
+
+/* Headings
+--------------------------------------------------
+h1 {
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 300;
+  margin-bottom: .5em;
+  color: red;
+}
+h3 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+  color: red;
+}
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+  border: 0 !important;
+}
+
+
+
+/* Main
+--------------------------------------------------
+.main {
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid red;
+}
+.main hr {
+  margin: 3em 0;
+  height: 2px;
+  background: #ddd;
+}
+.main p,
+.main figure,
+.main ul,
+.main ol {
+  margin-bottom: 1.5em;
+}
+.main a {
+  border-bottom: 2px solid #ddd;
+}
+.main a:hover {
+  border-color: #222;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+  margin-left: 1em;
+}
+
+/* Project meta
+--------------------------------------------------
+.meta {
+  margin-bottom: 1.5em;
+}
+.meta li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+  color: red;
+}
+.meta li b {
+  font-weight: 400;
+  color: #000;
+  padding-right: .25em;
+}
+
+
+/* Project teaser
+--------------------------------------------------
+.teaser {
+  list-style: none;
+}
+.teaser li {
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+@media screen and (min-width: 50em) {
+  .teaser li {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+  }
+  .teaser li:first-child {
+    margin-left: 0;
+  }
+}
+
+
+/* Next/Prev nav
+--------------------------------------------------
+.nextprev {
+  padding: 1em 0;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+
+/* Footer
+--------------------------------------------------
+.footer {
+  padding: 1em 0 6em;
+  font-size: .8em;
+}
+.copyright {
+  float: left;
+}
+.colophon {
+  float: right;
+}
+.colophon a b {
+  color: red;
+  padding-left: .25em;
+}
+*/
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    height: auto;
+}
+
+* { margin:0; padding:0; }
+
+body {
+    font-size:28px;
+    line-height: 36px;
+    font-family: "HelveticaNeueRegular", "HelveticaNeue-Regular", "Helvetica Neue Regular", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:normal; font-stretch:normal;
+    color:#fff;
+    background: #000;
+    margin:0px 0px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    /**/
+    width:100%;
+    /*height:100% !important;*/
+	height:auto !important;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+body.initial article {
+	margin-top:30px;
+}
+
+body.information {
+   /*overflow: scroll;*/
+   height:100% !important;
+   overflow:scroll;
+   visibility:visible;
+}
+
+body.retina.information {
+	/*
+    height:auto !important;
+    overflow: scroll !important;
+	*/
+}
+
+body.information.retina {
+
+
+}
+
+.retina.information #container-inner {
+	padding:0;
+}
+
+.upcoming-show {
+	margin-top:30px;
+}
+
+blockquote p {
+	text-indent: -0.5em;
+}
+
+
+body.information #container {
+	height:100%;
+}
+
+
+
+.newsletter-form input {
+	font-size:28px;
+	letter-spacing: 2px;
+	width:100%;
+	max-width: 520px;
+	background:none;
+}
+
+.newsletter-form input[type="submit"] {
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+    appearance:         none;
+	background:none;
+
+	border:none;
+	cursor:pointer;
+	display:inline-block;
+	text-align:left;
+	width:auto;
+}
+
+
+/* NEWSLETTER */
+.newsletter-form {
+	display:block;
+	clear:left;
+}
+
+.newsletter-form div {
+	margin-bottom:30px;
+}
+
+.newsletter-form input, .newsletter-form label {
+	display:block;
+}
+
+
+
+input[type="text"], input[type="email"], input[type="text"]:focus, input[type="email"]:focus {
+	background:#000 !important;
+	border:none;
+	border-bottom:2px solid #fff;
+	outline:none;
+	color:#fff;
+	font-family: "HelveticaNeueRegular", "HelveticaNeue-Regular", "Helvetica Neue Regular", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:normal; font-stretch:normal;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-size:1em;
+    font-weight: normal;
+    margin:0;
+	clear:left;
+}
+
+li { list-style: none; }
+
+.hidden_images{
+    display: none;
+}
+
+#container {
+    width:100%;
+    height:100%;
+
+    box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate(0px, 1px)
+    -moz-transform: translate(0px, 1px)
+    -ms-transform: translate(0px, 1px)
+    -o-transform: translate(0px, 1px)
+    transform: translate(0px, 1px)
+
+}
+
+
+
+#container-inner {
+
+    height:auto;
+    /*position: relative;*/
+    overflow: auto;
+    padding:60px;
+
+}
+
+body.caption-show * {
+    color:#000 !important;
+}
+
+body.caption-show .caption-container * {
+    color: #fff !important;
+}
+
+article { margin:0px 0 30px 0;  width:100%; }
+
+article:last-child { margin-bottom: 30px; }
+
+article.visible .dummy, article.visible .overlay-image { visibility: visible; }
+article .dummy, article .overlay-image { visibility: hidden; }
+
+.title {
+float: left;
+margin-right:40px;
+}
+
+.normal-color { color:white; }
+
+nav {
+    float:left;
+
+}
+
+nav li { float:left; margin-right:10px;  }
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+
+
+    text-align: center;
+    text-decoration: none;
+
+    color:#fff;
+}
+
+.information nav a, .information h1 a, .information header a {
+	color:#000;
+}
+
+
+
+h1 a {
+    color:#fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    margin-bottom: 30px !important;
+    z-index: 9999;
+	display:block;
+	float:left;
+}
+
+a { color:#fff; text-decoration: none; outline:none;  }
+
+
+
+a em { font-style: normal;}
+
+em{
+    font-style:normal !important;
+    text-transform:uppercase !important;
+    letter-spacing:2.3px !important;
+}
+
+
+.indent-p, blockquote {
+    padding: 30px 60px;
+    text-indent: 0;
+}
+
+blockquote.exdented {
+    text-indent: -14px;
+}
+
+span.exdented {
+    margin-left:-14px;
+}
+
+nav a:hover { text-decoration: none; border:none; }
+
+p { text-align: left; margin:0;  }
+
+
+.block { margin-bottom: 34px; }
+
+article p:first-child span:first-child, .block p:first-child { padding: 0 !important; text-indent: 0 !important; }
+
+article h3 + p, .info-inner p {
+	text-indent:0;
+}
+
+p + p {
+	text-indent:40px;
+}
+
+
+
+p.over span { }
+#object, .object { pointer-events:none; background:#000; }
+
+p img {
+display: none;
+}
+
+.initial article {
+
+}
+
+#info {
+    width: 100%;
+    background-color: #000;
+    color: #000;
+    font-family: "HelveticaNeueRegular", "HelveticaNeue-Regular", "Helvetica Neue Regular", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:normal; font-stretch:normal;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    overflow: scroll;
+    z-index: 9999;
+
+}
+
+.retina #info {
+	position:relative;
+}
+
+#info.webkit .inner {
+    background: url(../images/my-image-2.jpg) no-repeat top left #000;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center center;
+	/*
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	*/
+}
+
+#info .inner {
+	border:60px solid #000;
+	padding:0;
+}
+
+#info, #info a, #info p, #info h3 {
+	color: #fff;
+	background:#000;
+	mix-blend-mode: multiply;
+}
+
+#info blockquote {
+	padding:0;
+}
+
+#info header {
+	display:flex;
+	flex-wrap: wrap;
+	background:#000;
+	mix-blend-mode:multiply;
+}
+
+#info blockquote p {
+    padding: 30px 60px;
+}
+
+#info.retina {
+    -webkit-overflow-scrolling: touch;
+    height:auto !important;
+}
+
+#info.noWebkit {
+
+    font-family: "HelveticaNeueRegular", "HelveticaNeue-Regular", "Helvetica Neue Regular", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:normal; font-stretch:normal;
+    color:#fff;
+    letter-spacing: 2px;
+    background: #000;
+}
+
+#info.showBG {
+    background: url(../images/my-image-2.jpg) no-repeat center center, black;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#info .extra-info {
+	border-top:30px solid #000;
+	display:block;
+}
+
+#info .title {
+	border-right: 40px solid #000;
+	margin-right:0;
+	display:flex;
+    color: #fff;
+    mix-blend-mode: lighten;
+}
+
+#info nav li {
+	margin-right:0px;
+	border-right:10px solid #000;
+	display:flex;
+
+}
+
+.black-bg {
+	flex:1;
+	background:#000;
+	display:none;
+}
+
+.information .black-bg {
+	display:flex;
+}
+
+#info nav {
+
+}
+
+#info nav li a {
+	color: #fff;
+	mix-blend-mode: lighten;
+}
+
+.information header {
+	margin-bottom:0 !important;
+	border-bottom:30px solid #000;
+	width:100%;
+}
+
+#info br {
+	background:#000;
+	display:none;
+}
+
+#info .inner {
+    /*padding:60px;*/
+    -webkit-font-smoothing: subpixel-antialiased;
+
+}
+
+#info h1 {
+    font-family:"HelveticaNeueRegular", "HelveticaNeue-Regular", "Helvetica Neue Regular", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:normal; font-stretch:normal;
+}
+
+#info.noWebkit h1 {
+    font-family: "HelveticaNeueRegular", "HelveticaNeue-Regular", "Helvetica Neue Regular", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:normal; font-stretch:normal;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.inner-padding {
+    padding:60px;
+}
+
+
+article p {
+    text-indent: 40px;
+}
+
+article p:first-child, .extra-info p {
+	text-indent: 0;
+}
+
+article figure {
+  display: none;
+}
+
+address {
+margin: 30px 0px 30px;
+font-style: normal;
+}
+
+.indent {
+    margin-left:40px;
+}
+
+.overlay-image {
+    z-index:9998;
+    top:0;
+    position: absolute;
+}
+
+.video img {
+    width:100%;
+}
+
+.video iframe {
+    position: absolute;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.overlay-image.sticky {
+    position: fixed;
+}
+
+.overlay-image img {
+    width:100%;
+	display:none;
+}
+
+.overlay-image.visible img {
+	display:block;
+}
+
+.dummy {
+    z-index: 10;
+    position: absolute;
+    background-color:black;
+    top:0;
+    opacity:0;
+}
+
+.dummy.sticky {
+    position: absolute;
+}
+
+
+.overlay-image {
+    position:absolute;
+    z-index: 99;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+
+.overlay-image.sticky {
+    position:fixed;
+    z-index:999;
+}
+
+.overlay-image.portrait img {
+    height:100%;
+    width:auto;
+}
+
+.overlay-image.landscape img {
+    width:100%;
+    height:auto;
+}
+
+.caption-container {
+    position: fixed;
+    z-index: 99;
+     top:0;
+    left:0;
+
+    display: none;
+}
+
+
+.caption-container.show {
+    display: block;
+}
+
+.caption-layer {
+    padding:60px;
+}
+
+.elips {
+    width:100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.mobile {
+    display: none;
+}
+
+.image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.punctuation:first-child {
+    margin-left: -14px;
+}
+
+.image img {
+    width:60%;
+}
+
+.image h3 {
+    text-align: left;
+    width:60%;
+    margin: 9px auto 30px auto;
+}
+
+.phone { display: none; }
+
+@media only screen and (max-width: 1120px) {
+    #container {
+        width:100%;
+    }
+
+    article .overlay-image, article .dummy {
+      display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+    article figure {
+      display:block;
+      text-align: center;
+    }
+
+    article figure img {
+      width:60%;
+      height: auto;
+        margin: 0 auto;
+        padding: 30px 0 9px 0;
+    }
+
+	article p span {
+		padding:0 !important;
+	}
+
+    article figure figcaption {
+      width:60%;
+      margin:0 auto 20px auto;
+      text-indent: 0;
+    }
+
+
+    p img {
+        display: block;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 30px 0 9px 0;
+    }
+
+    .desktop { display: none; }
+
+    .inner-article-image p {
+
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    header h1 { width:100%; }
+    header a, header nav  { margin-left:0 !important; }
+
+
+	article p span {
+		padding:0 !important;
+	}
+
+
+    p img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 30px 0 9px 0;
+    }
+
+    .inner-article-image p {
+        width: 100% !important;
+        margin: 0 auto 10px auto;
+        text-indent: 0;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 460px) {
+    body, h1, h2, h3, h4, h5, h6, #info, input {
+        letter-spacing:1px !important;
+        font-size:14px !important;
+        line-height:18px !important;
+    }
+
+	.newsletter-form div {
+		margin-bottom:20px;
+	}
+
+	input {
+		width:100%;
+	}
+
+	input[type="submit"] {
+		float:left;
+		text-align:left;
+		display:inline-block !important;
+		width:auto;
+	}
+
+    article {
+        margin-bottom: 30px;
+    }
+
+	body.initial article {
+		margin-top:18px;
+	}
+
+	nav li {
+		margin-right:5px;
+	}
+
+    .image img, .image h3 {
+        width:100%;
+    }
+
+    .punctuation:first-child {
+        margin-left: -10px;
+    }
+
+
+
+    p img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px 0 10px 0;
+    }
+
+
+
+    .indent {
+        margin-left:30px !important;
+    }
+
+    article p, p + p {
+        text-indent: 30px;
+    }
+
+    header { margin-bottom:15px !important; }
+
+    .indent-p, blockquote {
+        margin:0 18px !important;
+	    padding: 15px 0;
+    }
+
+
+
+    #container-inner, .inner {
+        padding:30px !important;
+    }
+
+	.information #container-inner, .inner {
+		padding:0px !important;
+	}
+
+	#info .inner {
+		border:30px solid #000;
+	}
+
+	#info blockquote {
+		margin:0 !important;
+	}
+
+	#info blockquote p {
+		border-top:0;
+		border-bottom:0;
+
+		padding:15px 18px;
+	}
+
+    .elips {
+        margin:18px 0 !important;
+    }
+
+    .phone { display:block; }
+
+    .block, .image h3 {
+        margin-bottom: 18px !important;
+    }
+
+    address {
+        margin:18px 0 !important;
+    }
+
+    .image { margin-top:18px !important; }
+
+
+}
+
+
+.table-of-contents {
+	clear:left;
+}
+
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+.nprogress-busy {
+	margin:0;
+	padding:0;
+}
+
+.nprogress-busy .hide-busy {
+	visibility:hidden;
+}
+
+.loading {
+	visibility:hidden;
+}
+
+.nprogress-busy .loading {
+	visibility:visible;
+}
+
+.nprogress-busy article {
+
+}
+
+#nprogress .bar {
+  display:none;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display:none;
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display:none;
+}
+
+#nprogress .spinner-icon {
+	display:none;
+
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}

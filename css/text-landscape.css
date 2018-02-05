@@ -1,0 +1,377 @@
+body {
+  background: white;
+}
+
+/* ON & OFF */
+
+.dirt-grains {
+  cursor: pointer;
+  font-size: 24px;
+  display: table;
+}
+
+
+input#commute-dirt, input#meanwhile-dirt, input#boredom-dirt, input#in-dirt, input#quick-dirt, input#abolish-dirt, input#warning-dirt, input#politics-dirt, input#never-dirt, input#occupy-dirt, input#conflict-dirt, input#concrete-dirt, input#art-dirt, input#live-dirt, input#the-most-dirt, input#be-dirt, input#alcohol-dirt, input#under-dirt {
+    display: none;
+}
+
+input#commute-dirt:checked + #commute {
+    display: block;
+}
+
+input#meanwhile-dirt:checked + #meanwhile {
+    display: block;
+}
+
+input#boredom-dirt:checked + #boredom {
+    display: block;
+}
+
+input#in-dirt:checked + #in {
+    display: block;
+}
+
+input#quick-dirt:checked + #quick {
+    display: block;
+}
+
+input#abolish-dirt:checked + #abolish {
+    display: block;
+}
+
+input#warning-dirt:checked + #warning {
+    display: block;
+}
+
+input#politics-dirt:checked + #politics {
+    display: block;
+}
+
+input#never-dirt:checked + #never {
+    display: block;
+}
+
+input#occupy:checked + #occupy {
+    display: block;
+}
+
+input#conflict-dirt:checked + #conflict {
+    display: block;
+}
+
+input#concrete-dirt:checked + #concrete {
+    display: block;
+}
+
+input#art-dirt:checked + #art {
+    display: block;
+}
+
+input#live-dirt:checked + #live {
+    display: block;
+}
+
+input#the-most-dirt:checked + #the-most {
+    display: block;
+}
+
+input#be-dirt:checked + #be {
+    display: block;
+}
+
+input#alcohol-dirt:checked + #alcohol {
+    display: block;
+}
+
+input#under-dirt:checked + #under {
+    display: block;
+}
+
+/* WALL */
+
+/* COLOPHON */
+
+.colophon {
+  position: absolute;
+  right: 20px;
+  font-size: 11px;
+  text-align: right;
+  max-width: 300px;
+}
+
+body {
+      position: absolute;
+}
+
+
+/* DIRTBOX */
+
+.dirtbox {
+  position: absolute;
+  top: 0;
+  width: 5000px;
+  height: 100vh;
+  padding-top: 500px;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+
+}
+
+/* GRAFFITTI */
+
+.graffitti {
+    display: none;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 45px;
+    color: #00FFFF;
+    position: absolute;
+}
+
+#commute {
+  top: 20px;
+  left: 40px;
+  font-size: 60px;
+
+}
+
+#meanwhile {
+  top: 180px;
+  left: 1800px;
+  font-size: 16px;
+  color: red;
+
+}
+
+#boredom {
+top: 230px;
+left: 9px;
+color: #ccff00;
+
+}
+
+#in {
+top: 160px;
+left: 2310px;
+
+}
+
+#quick {
+top: 240px;
+left: 1200px;
+font-size: 36px;
+color:#ba0be0;
+
+}
+
+#abolish {
+top: 90px;
+left: 1200px;
+color: #e856e1;
+
+}
+
+#warning {
+top: 140px;
+left: 400px;
+color: #39ff14;
+font-size: 18px;
+
+}
+
+#politics {
+top: 240px;
+left: 500px;
+color: #ff0000;
+
+}
+
+#never {
+top: 240px;
+left: 1500px;
+
+}
+
+#occupy {
+top: 240px;
+left: 2000px;
+
+}
+
+#conflict {
+top: 100px;
+left: 2500px;
+font-size: 70px;
+color:#ffff00;
+
+}
+
+#concrete {
+top: 240px;
+left: 3000px;
+
+}
+
+#art {
+top: 20px;
+left: 3800px;
+font-size: 42px;
+color: #7FFF00;
+
+}
+
+#live {
+top: 240px;
+left: 4300px;
+color: #ee22b0;
+font-size: 40px;
+
+}
+
+#the-most {
+top: 60px;
+left: 6500px;
+font-size: 16px;
+color: red;
+
+}
+
+#be {
+top: -7px;
+left: 5900px;
+font-size: 40px;
+color: #7FFF00;
+
+}
+
+#alcohol {
+top: 40px;
+left: 6900px;
+
+}
+
+#under {
+top: 70px;
+left: 7104px;
+font-size: 20px;
+color: #ee22b0;
+
+}
+
+
+/* DIRT-GRAINS */
+
+#dirt-grain-commute {
+  position: relative;
+  left: 100px;
+  top: -150px;
+}
+
+#dirt-grain-meanwhile {
+  position: relative;
+  top: 130px;
+  left: 2820px;
+}
+
+#dirt-grain-boredom {
+  position: relative;
+  top: -185px;
+  left: 343px;
+
+}
+
+#dirt-grain-in {
+  position: relative;
+  top: -180px;
+  left: 2345px;
+}
+
+#dirt-grain-quick {
+  position: relative;
+  top: -280px;
+  left: 1245px;
+}
+
+#dirt-grain-abolish {
+  position: relative;
+  top: -300px;
+  left: 1800px;
+}
+
+#dirt-grain-warning {
+  position: relative;
+  top: -300px;
+  left: 400px;
+}
+
+#dirt-grain-politics {
+  position: relative;
+  top: -300px;
+  left: 500px;
+}
+
+#dirt-grain-never {
+  position: relative;
+  top: -300px;
+  left: 1500px;
+}
+
+#dirt-grain-occupy {
+  position: relative;
+  top: -520px;
+  left: 2000px;
+}
+
+#dirt-grain-conflict {
+  position: relative;
+  top: -650px;
+  left: 2500px;
+}
+
+#dirt-grain-concrete {
+  position: relative;
+  top: -300px;
+  left: 3000px;
+}
+
+#dirt-grain-art {
+  position: relative;
+  top: -500px;
+  left: 4300px;
+}
+
+#dirt-grain-live {
+  position: relative;
+  top: -600px;
+  left: 4800px;
+}
+
+#dirt-grain-the-most {
+  position: relative;
+  top: -800px;
+  left: 6600px;
+}
+
+#dirt-grain-be {
+  position: relative;
+  top: -821px;
+  left: 5995px;
+}
+
+#dirt-grain-alcohol {
+  position: relative;
+  top: -801px;
+  left: 6945px;
+}
+
+#dirt-grain-under {
+  position: relative;
+  top: -938px;
+  left: 7225px;
+}
