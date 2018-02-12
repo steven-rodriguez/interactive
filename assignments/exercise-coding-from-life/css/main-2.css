@@ -1,0 +1,78 @@
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: Chocolate ;
+	position: relative;
+}
+
+/* STILL LIFE */
+
+.object {
+	position: absolute;
+
+}
+
+#lamp {
+	height: 10em;
+	width: 10em;
+	border-radius: 50%;
+	position: absolute;
+	background: FloralWhite;
+	right: 43em;
+	bottom: 19em;
+}
+
+#box {
+	width: 160px;
+	height: 160px;
+	background: peru;
+	right: 33em;
+	bottom: 11em;
+
+}
+
+#orange {
+	height: 8em;
+	width: 8em;
+	border-radius: 50%;
+	position: absolute;
+	background: orange;
+	right: 43em;
+	bottom: 19em;
+}
+
+#kiwi {
+	height: 3.5em;
+	width: 5em;
+	border-radius: 50%;
+	position: absolute;
+	background: Gainsboro ;
+	right: 49em;
+	bottom: 20em;
+}
+
+
+
+#rose {
+	background: Maroon;
+	height: 4em;
+	width: 4em;
+	border-radius: 50%;
+	top: 15em;
+	left: 14em;
+	transform: skewY(10deg);
+}
+
+#rose #clear-thing {
+	width: 0;
+	height: 0;
+	border-bottom: 600px solid #4ec42f;
+	border-left: 100px solid transparent;
+	top: -4em;
+	left: -1em;
+}

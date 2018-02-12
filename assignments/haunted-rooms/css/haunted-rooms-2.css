@@ -1,0 +1,54 @@
+body, html {
+	background: white;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+.back-floor {
+  position: absolute;
+
+	width: 86vw;
+	height: 1px;
+	background: black;
+  left: 0em;
+  bottom: 45vh;
+}
+
+.right-floor {
+  position: absolute;
+	width: 31vw;
+	height: 1px;
+	background: black;
+  right: 14vw;
+  bottom: 45vh;
+  transform: rotate(-117deg);
+  transform-origin: 100% 0;
+}
+
+.wall {
+  position: absolute;
+	width: 1px;
+	height: 57vh;
+	background: black;
+  right: 14vw;
+  bottom: 45vh;
+}
+
+.monster {
+  position: fixed;
+  right: 42em;
+  bottom: 16vh;
+  z-index: 1;
+}
+
+.everything {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
+}
