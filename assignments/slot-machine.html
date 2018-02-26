@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Slot Machine (Class Demo)</title>
+  <link rel="stylesheet" href="../css/slot-machine.css" />
+
+</head>
+
+<body>
+
+  <div id="column-one"></div>
+  <div id="column-two"></div>
+  <div id="column-three"></div>
+
+  <button>Good Luck!</button>
+
+  <script src="../js/jquery.min.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+
+    // Define the colors
+    var dice = ['dice-1.jpg', 'dice-2.gif', 'dice-3.jpg', 'dice-4.jpg', 'dice-5.jpg', 'dice-6.jpg'];
+    var leprechaun = ['leprechaun-1.jpg', 'leprechaun-2.jpg', 'leprechaun-3.jpg', 'leprechaun-4.gif', 'leprechaun-5.jpg', 'leprechaun-6.jpg'];
+    var things = ['things-1.png', 'things-2.jpg', 'things-3.jpg', 'things-4.gif', 'things-5.jpg', 'things-6.jpg'];
+
+    var place_one = Math.floor(Math.random() * dice. length);
+    var place_two = Math.floor(Math.random() * leprechaun. length);
+    var place_three = Math.floor(Math.random() * things. length);
+
+    console.log(dice);
+    console.log(leprechaun);
+    console.log(things);
+    console.log("place in array: " + place_one);
+    console.log(dice[place_one]);
+    console.log(leprechaun[place_one]);
+    console.log(things[place_one]);
+    // console.log("This is math random function " + Math.random());
+
+
+    // Define function to generate the random colors
+    // function generateRandomColors(){
+    //   var color_one = colors[Math.floor(Math.random() * colors.length)];
+    //   var color_two = colors[Math.floor(Math.random() * colors.length)];
+    //   var color_three = colors[Math.floor(Math.random() * colors.length)];
+    //   console.log("The first color is " + color_one);
+    //   console.log("The second color is " + color_two);
+    //   console.log("The third color is " + color_three);
+    // var imageUrl = "url(../images/)"
+
+      $('#column-one').css("background-image", "url(../images/" + dice[place_one] + ")" );
+      $('#column-two').css("background-image", "url(../images/" + leprechaun[place_two] + ")" );
+      $('#column-three').css("background-image", "url(../images/" + things[place_three] + ")" );
+
+
+    //   $('#column-two').css("background-image", color_two);
+    //   $('#column-three').css("background-image", color_three);
+    // }
+
+    // Generate the random colors when the page loads
+    function generateRandomDice(){
+
+      var dice = ['dice-1.jpg', 'dice-2.gif', 'dice-3.jpg', 'dice-4.jpg', 'dice-5.jpg', 'dice-6.jpg'];
+      var leprechaun = ['leprechaun-1.jpg', 'leprechaun-2.jpg', 'leprechaun-3.jpg', 'leprechaun-4.gif', 'leprechaun-5.jpg', 'leprechaun-6.jpg'];
+      var things = ['things-1.png', 'things-2.jpg', 'things-3.jpg', 'things-4.gif', 'things-5.jpg', 'things-6.jpg'];
+
+      var place_one = Math.floor(Math.random() * dice. length);
+      var place_two = Math.floor(Math.random() * leprechaun. length);
+      var place_three = Math.floor(Math.random() * things. length);
+
+      $('#column-one').css("background-image", "url(../images/" + dice[place_one] + ")" );
+      $('#column-two').css("background-image", "url(../images/" + leprechaun[place_two] + ")" );
+      $('#column-three').css("background-image", "url(../images/" + things[place_three] + ")" );
+
+    }
+    generateRandomDice();
+
+
+    // Buttom click event
+    $('button').click(function(){
+      generateRandomDice();
+    });
+
+  });
+
+  </script>
+
+</body>
+
+</html>

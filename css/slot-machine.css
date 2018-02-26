@@ -1,0 +1,43 @@
+div {
+  position: fixed;
+  width: 33.333%;
+  top: 10%;
+  bottom: 0;
+  background-position: center;
+  background-size: contain;
+  max-height: 400px;
+  background-repeat: no-repeat;
+}
+
+#column-one {
+  /* background: yellow; */
+  left: 5%;
+  width: 33.333%;
+}
+#column-two {
+  /* background: lime; */
+  left: 33.333%;
+  width: 33.333%;
+}
+#column-three {
+  /* background: blue; */
+  right: 5%;
+  width: 33.333%;
+}
+button {
+  position: fixed;
+  bottom: 250px;
+  left: 50%;
+}
+
+#win {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  background: black;
+  color: white;
+  text-align: center;
+}

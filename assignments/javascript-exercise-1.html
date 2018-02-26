@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Title title title</title>
+   <meta charset="utf-8">
+ </head>
+
+ <body>
+   Content content content
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript">
+
+      // var name = "Steven";
+      // var year = "2018";
+      // var introduction = " Hi, I'm " + name + ", and I graduate  prelim in " + year;
+      // console.log(introduction);
+      // function hello(person) {
+      //   var greeting = "Hello," +person+"! It's ";
+      //   var date = new Date();
+      //
+      //   alert(greeting + date);
+      // }
+      // hello("Steven");
+      // hello("World");
+
+
+      $(document).ready(function(){
+        var size = Math.floor(Math.random() * 12) + 1;
+        var units = "em";
+        var fontSize = size + units;
+
+        console.log("font-size: " + fontSize);
+        $("body").css("font-size", fontSize);
+      });
+
+
+   </script>
+ </body>
+</html>

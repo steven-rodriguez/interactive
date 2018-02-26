@@ -13,3 +13,9 @@ hr {
   width: 500px;
   margin: 2em 0;
 }
+
+#button {
+  background: yellow;
+  width: 8em;
+
+}
