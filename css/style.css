@@ -1,5 +1,29 @@
+div {
+  position: absolute;
+  width: 33.333%;
+  top: 10%;
+  /* bottom: 0; */
+  background-position: center;
+  /* background-size: contain; */
+  /* max-height: 400px; */
+  background-repeat: no-repeat;
+}
+
+#column-one {
+  /* background: yellow; */
+  left: 5%;
+  width: 25%;
+}
+
+#column-two {
+  /* background: yellow; */
+  left: 25%;
+  width: 75%;
+  top: 14%;
+}
+
 body {
-  background: Cornsilk;
+font: normal 16px/20px Times, serif;
 }
 
 .webring {
@@ -14,8 +38,44 @@ hr {
   margin: 2em 0;
 }
 
-#button {
-  background: yellow;
-  width: 8em;
+ul {
+  padding: 0;
+  list-style-type: none;
+}
 
+h1 {
+  font-weight: normal;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.1;
+  margin-bottom: 1em;
+  text-indent: 0rem;
+}
+
+h2 {
+  font-weight: normal;
+  text-align: left;
+  font-size: 16px;
+  line-height: 0.75em;
+  text-indent: 0em;
+}
+
+p {
+  margin-left: 1.5em;
+
+  font-size:
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+a:hover {
+border-bottom: 1px solid black;
+
+*::selection {
+  background: orange;
+  color: black;
 }
