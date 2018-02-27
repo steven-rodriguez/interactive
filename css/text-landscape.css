@@ -51,7 +51,7 @@ input#never-dirt:checked + #never {
     display: block;
 }
 
-input#occupy:checked + #occupy {
+input#occupy-dirt:checked + #occupy {
     display: block;
 }
 
@@ -142,10 +142,12 @@ li {
 }
 
 #meanwhile {
-  top: 180px;
-  left: 1800px;
+  top: 40px;
+  left: 2900px;
   font-size: 16px;
-  color: red;
+  color: #0000FF;
+  max-width: 300px;
+  transform: rotate(3deg);
 
 }
 
@@ -157,15 +159,17 @@ color: #ccff00;
 }
 
 #in {
-top: 160px;
+top: 6px;
 left: 2310px;
-
+max-width: 600px;
+color: #ff0000;
+transform: rotate(-3deg);
 }
 
 #quick {
 top: 240px;
 left: 1200px;
-font-size: 36px;
+font-size: 50px;
 color:#ba0be0;
 
 }
@@ -179,28 +183,33 @@ color: #e856e1;
 
 #warning {
 top: 140px;
-left: 400px;
+left: 900px;
 color: #39ff14;
 font-size: 18px;
 
 }
 
 #politics {
-top: 240px;
+top: 130px;
 left: 500px;
 color: #ff0000;
+transform: rotate(-7deg);
 
 }
 
 #never {
-top: 240px;
+top: 55px;
 left: 1500px;
+font-size: 75px;
+max-width: 300px;
+transform: rotate(7deg);
 
 }
 
 #occupy {
-top: 240px;
-left: 2000px;
+top: 56px;
+left: 1806px;
+color: #ccff00;
 
 }
 
@@ -219,10 +228,12 @@ left: 3000px;
 }
 
 #art {
-top: 20px;
+top: 80px;
 left: 3800px;
-font-size: 42px;
+font-size: 62px;
+max-width: 600px;
 color: #7FFF00;
+transform: rotate(7deg);
 
 }
 
@@ -231,6 +242,7 @@ top: 240px;
 left: 4300px;
 color: #ee22b0;
 font-size: 40px;
+
 
 }
 
@@ -247,6 +259,8 @@ top: -7px;
 left: 5900px;
 font-size: 40px;
 color: #7FFF00;
+max-width: 600px;
+transform: rotate(-3deg);
 
 }
 
@@ -307,7 +321,7 @@ color: #ee22b0;
 #dirt-grain-warning {
   position: relative;
   top: -300px;
-  left: 400px;
+  left: 900px;
 }
 
 #dirt-grain-politics {
