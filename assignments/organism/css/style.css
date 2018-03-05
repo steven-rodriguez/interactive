@@ -1,0 +1,320 @@
+body {
+  background-image: url(../images/bathroom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: url(../images/no-germs.ico), default;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#screensaver {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+  z-index: 101;
+  background: rgba(0, 0, 0, .85);
+  pointer-events: none;
+}
+
+#germ {
+  /* background: rgb(8, 146, 0); */
+  width: 20vw;
+  height: 28vh;
+  border-radius: 50%;
+  text-align: center;
+  padding:4em;
+  position: absolute;
+  bottom: 30vh;
+  left: 35vw;
+  z-index: 5;
+  }
+
+  /* #body {
+    width: 100%;
+  } */
+
+#germ:hover {
+  transform: scale(.05);
+  transition: all 5000ms ease-in;
+}
+
+  #germ .germ-body {
+    background: rgb(8, 146, 0);
+    width: 20vw;
+    height: 28vh;
+    border-radius: 50%;
+    text-align: center;
+    padding:4em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 280px;
+    z-index: 10;
+  }
+
+  #germ .eyes {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    left: 6vw;
+    bottom: 27vh;
+  }
+
+  #germ .eye-1 {
+    background: rgb(139, 61, 43);
+    width: 5vw;
+    height: 7vh;
+    border-radius: 50%;
+    margin: 1em;
+    left: -20px;
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    border: 4px solid black;
+  }
+
+  #germ .eye-black-1 {
+    background: black;
+    width: 13.33px;
+    height: 11.66px;
+    border-radius: 50%;
+    margin: 1em;
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+    z-index: 12;
+    border: 4px solid black;
+  }
+
+  #germ .eye-white-1 {
+    background: white;
+    width: 11.33px;
+    height: 9.66px;
+    border-radius: 50%;
+    /* margin: 1em;
+    left: 6px;
+    bottom: -13px; */
+    position: absolute;
+    display: inline-block;
+    z-index: 13;
+  }
+
+
+  #germ .eye-2 {
+    background: rgb(139, 61, 43);
+    width: 5vw;
+    height: 7vh;
+    border-radius: 50%;
+    /* margin: 1em; */
+    left: 44px;
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    border: 4px solid black;
+  }
+
+  #germ .eye-black-2 {
+    background: black;
+    width: 13.33px;
+    height: 11.66px;
+    border-radius: 50%;
+    margin: 1em;
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+    z-index: 12;
+    border: 4px solid black;
+  }
+
+  #germ .eye-white-2 {
+    background: white;
+    width: 11.33px;
+    height: 9.66px;
+    border-radius: 50%;
+    /* margin: 1em;
+    left: 6px;
+    bottom: -13px; */
+    position: absolute;
+    display: inline-block;
+    z-index: 13;
+  }
+
+  #germ .mouth{
+    background: black;
+    width: 18vw;
+    height: 17vh;
+    border-radius: 50%;
+    left: 71px;
+    bottom: 57px;
+    position: absolute;
+    z-index: 10;
+  }
+
+  #germ .little-mouth{
+    background: rgb(8, 146, 0);
+    width: 10vw;
+    height: 6vh;
+    border-radius: 50%;
+    left: 71px;
+    bottom: 10px;
+    position: absolute;
+    z-index: 10;
+  }
+
+#germ .leg-1  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 29vh;
+  width:  10em;
+  height: 10em;
+  border-top-right-radius: 18%;
+  transform: rotate(-77deg) skewX(-33deg) scale(1,.866);
+  z-index: 3;
+  border: 7px solid black;
+}
+
+#germ .leg-2  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 0vh;
+  width:  10em;
+  height: 10em;
+  border-top-right-radius: 14%;
+  transform: rotate(136deg) skewX(-33deg) scale(1,.866);
+  z-index: 3;
+  border: 7px solid black;
+}
+
+#germ .leg-3  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 1vh;
+  left: 1vh;
+  width:  10em;
+  height: 10em;
+  border-top-right-radius: 15%;
+  transform: rotate(159deg) skewX(-33deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-4  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 18vh;
+  left: -1vh;
+  width:  8em;
+  height: 10em;
+  border-top-right-radius: 13%;
+  transform: rotate(242deg) skewX(-33deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-5  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: -4vh;
+  left: 15vh;
+  width:  8em;
+  height: 10em;
+  border-top-right-radius: 26%;
+  transform: rotate(85deg) skewX(-35deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-6  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 1vh;
+  left: 31vh;
+  width:  8em;
+  height: 10em;
+  border-top-right-radius: 23%;
+  transform: rotate(50deg) skewX(-34deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-7  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 5vh;
+  left: 19vh;
+  width:  12em;
+  height: 18em;
+  border-top-right-radius: 29%;
+  transform: rotate(4deg) skewX(-34deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-8  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 5vh;
+  left: 1vh;
+  width:  12em;
+  height: 15em;
+  border-top-right-radius: 29%;
+  transform: rotate(-153deg) skewX(-34deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-9  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 17vh;
+  left: 11vh;
+  width:  12em;
+  height: 15em;
+  border-top-right-radius: 29%;
+  transform: rotate(-390deg) skewX(-43deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-10  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 23vh;
+  left: 5vh;
+  width:  7em;
+  height: 9em;
+  border-top-right-radius: 40%;
+  transform: rotate(-474deg) skewX(-58deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-11  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 26vh;
+  left: 24vh;
+  width:  8em;
+  height: 8em;
+  border-top-right-radius: 40%;
+  transform: rotate(-385deg) skewX(-59deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
+
+#germ .leg-12  {
+  position: absolute;
+  background: rgb(8, 146, 0);
+  bottom: 13vh;
+  left: 30vh;
+  width:  8em;
+  height: 8em;
+  border-top-right-radius: 57%;
+  transform: rotate(-338deg) skewX(-59deg) scale(1,.866);
+  z-index: 2;
+  border: 7px solid black;
+}
