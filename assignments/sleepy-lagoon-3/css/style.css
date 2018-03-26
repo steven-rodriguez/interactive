@@ -1,0 +1,1061 @@
+.wall {
+  transform-style: preserve-3d;
+  transform: perspective(2.5cm) rotateX(5deg) rotateY(-19deg);
+  max-width: 200%;
+}
+
+.letter {
+  display: inline-block;
+  vertical-align: top;
+  width: 15vw;
+  height: 25vw;
+  position: relative;
+  margin-right: 2.5vw;
+  margin-bottom: 2.5vw;
+  perspective: 80%;
+}
+
+.letter-inside {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 80%;
+}
+
+.xl-letter {
+  display: inline-block;
+  vertical-align: top;
+  width: 20vw;
+  height: 25vw;
+  position: relative;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  perspective: 80%;
+}
+
+.xl-letter-inside {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 80%;
+}
+/* A */
+.a .left {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  left: 11%;
+  top: 0;
+  bottom: 0;
+  transform: rotate(7deg);
+}
+
+.a .top-middle {
+  background: black;
+  height: 0.75vw;
+  top: 0;
+  left: 21%;
+  position: absolute;
+  width: 75%;
+}
+
+.a .middle {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 84%;
+  left: 15%;
+}
+
+.a .right {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* b */
+.b .left {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.b .top-middle {
+  background: black;
+  height: 0.75vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 85%;
+}
+
+.b .middle {
+  background: black;
+  position: absolute;
+  top: 25%;
+  height: 0.75vw;
+  width: 100%;
+}
+
+.b .right-top {
+  background: black;
+  width: 0.75vw;
+  height: 25%;
+  position: absolute;
+  right: 15%;
+  top: 0;
+  bottom: 0;
+}
+
+.b .right-bottom {
+  background: black;
+  width: 0.75vw;
+  height: 75%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.b .bottom {
+  background: black;
+  height: 0.75vw;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* C */
+.c .left {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: rotate(3deg);
+}
+
+.c .top-middle {
+  background: black;
+  height: 0.75vw;
+  top: 0;
+  left:5%;
+  position: absolute;
+  width: 93%;
+}
+
+.c .right-top {
+  background: black;
+  width: 0.75vw;
+  height: 25%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.c .right-bottom {
+  background: black;
+  width: 0.75vw;
+  height: 25%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.c .bottom {
+  background: black;
+  height: 0.75vw;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* D */
+.d .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  top: 0;
+  bottom: 0;
+}
+
+.d .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.d .top {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.d .bottom {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  right: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+/* E */
+.e .middle-1 {
+  background: black;
+  position: absolute;
+  top: 0%;
+  left: 7%;
+  height: 0.75vw;
+  /* transform: rotate(-7deg); */
+  width: 94%;
+}
+
+.e .middle-2 {
+  background: black;
+  width: 100%;
+  height: 0.75vw;
+  position: absolute;
+  left: 0%;
+  top: 75%;
+  /* bottom: 0; */
+  /* transform: rotate(110deg); */
+}
+
+.e .middle-3 {
+  background: black;
+  width: 0.75vw;
+  height: 82%;
+  transform: rotate(76deg);
+  position: absolute;
+  left: 49%;
+  bottom:-29%;
+}
+
+.e .left {
+  background: black;
+  width: 0.75vw;
+  height: 75%;
+  position: absolute;
+  left: 4%;
+  top: 0;
+  transform: rotate(4deg);
+}
+
+.e .bottom {
+  background: black;
+  height: 0.75vw;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+/* F */
+.f .left {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.f .middle {
+  background: black;
+  height: 0.75vw;
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+}
+
+.f .top {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+/* G */
+.g .top {
+  background: black;
+  height: 0.75vw;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.g .top-right {
+  background: black;
+  width: 0.75vw;
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 25%;
+}
+
+.g .left {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.g .bottom {
+  background: black;
+  height: 0.75vw;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.g .right {
+  background: black;
+  width: 0.75vw;
+  height: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.g .middle-top {
+  background: black;
+  height: 0.75vw;
+  bottom: 50%;
+  position: absolute;
+  width: 50%;
+  right: 0;
+}
+/* h */
+.h .left {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.h .middle {
+  background: black;
+  height: 0.75vw;
+  width: 100%;
+}
+
+.h .right {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* I */
+.i .top {
+  background: black;
+  height: 0.75vw;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.i .middle {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.i .bottom {
+  background: black;
+  height: 0.75vw;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+/* J */
+.j .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.j .bottom {
+  background: black;
+  width: 100%;
+  height: 0.75vw;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.j .left {
+  background: black;
+  width: 0.75vw;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  height: 25%;
+}
+/* K */
+.k .middle-1 {
+  background: black;
+  position: absolute;
+  top: 33%;
+  height: 0.75vw;
+  transform: rotate(-48deg);
+  width: 138%;
+}
+
+.k .middle-2 {
+  background: black;
+  width: 0.75vw;
+  height: 64%;
+  position: absolute;
+  left: 48%;
+  top: 50%;
+  bottom: 0;
+  transform: rotate(121deg);
+}
+
+.k .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.k .right {
+  background: black;
+  width: 0.75vw;
+  height: 25%;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+/* L */
+.l .left {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.l .bottom {
+  background: black;
+  position: absolute;
+  height: 0.75vw;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/* M */
+.m .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.m .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.m .top {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 45%;
+  right: 0;
+  top: 0;
+}
+
+.m .middle-1 {
+  background: black;
+  position: absolute;
+  top: 33%;
+  height: 0.75vw;
+  transform: rotate(-114deg);
+  left: -27%;
+  width: 96%;
+}
+
+.m .middle-2 {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  right: 0;
+  left: 4%;
+  width: 88%;
+  bottom: 64%;
+  transform: rotate(100deg);
+}
+/* N */
+.n .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.n .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.n .middle {
+  background: black;
+  position: absolute;
+  top: 48%;
+  height: 0.75vw;
+  transform: rotate(-128deg);
+  left: -29%;
+  width: 157%;
+}
+/* O */
+.o .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.o .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.o .top {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.o .bottom {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  right: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+/* P */
+.p .left {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.p .middle {
+  background: black;
+  height: 0.75vw;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+}
+
+.p .middle-top {
+  position: absolute;
+  background: black;
+  top: 0;
+  height: 0.75vw;
+  width: 100%;
+}
+
+.p .right {
+  background: black;
+  width: 0.75vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 80%;
+}
+/* Q */
+.q .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.q .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.q .top {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.q .bottom {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  right: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+.q .middle {
+  background: black;
+  width: 0.75vw;
+  height: 25%;
+  position: absolute;
+  left: 64%;
+  top: 86%;
+  bottom: 0;
+  transform: rotate(-28deg);
+}
+/* R */
+.r .top {
+  background: black;
+  position: absolute;
+  top: 0;
+  height: 0.75vw;
+  width: 100%;
+}
+
+.r .top-2 {
+  background: black;
+  position: absolute;
+  top: 80%;
+  height: 0.75vw;
+  width: 100%;
+}
+
+.r .middle {
+  background: black;
+  width: 0.75vw;
+  height: 62%;
+  position: absolute;
+  left: 48%;
+  top: 60%;
+  bottom: 0;
+  transform: rotate(108deg);
+}
+
+.r .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* .r .right {
+  background: black;
+  width: 0.75vw;
+  height: 25%;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+} */
+
+.r .right-2 {
+  background: black;
+  width: 0.75vw;
+  height: 80%;
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+
+/* S */
+.s .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.s .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.s .top {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 45%;
+  left: 0;
+  top: 0;
+}
+
+.s .bottom {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 45%;
+  right: 0;
+  bottom: 0;
+}
+
+.s .middle {
+  background: black;
+  width: 0.75vw;
+  height: 127%;
+  position: absolute;
+  left: 48%;
+  top: -13%;
+  bottom: 0;
+  transform: rotate(38deg);
+}
+/* T */
+.t .left {
+  background: black;
+  width: 0.75vw;
+  height: 25%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.t .top-middle {
+  background: black;
+  height: 0.75vw;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.t .middle {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+}
+
+.t .right {
+  background: black;
+  width: 0.75vw;
+  height: 25%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* U */
+.u .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.u .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.u .bottom {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  right: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+/* V */
+
+.v .left {
+  background: black;
+  position: absolute;
+  top: 48%;
+  height: 0.75vw;
+  transform: rotate(-108deg);
+  left: -28%;
+  width: 120%;
+}
+.v .right {
+  background: black;
+  position: absolute;
+  top: 48%;
+  height: 0.75vw;
+  transform: rotate(108deg);
+  left: 9%;
+  width: 120%;
+}
+
+/* M */
+.w .left {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.w .right {
+  background: black;
+  width: 0.75vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.w .bottom-1 {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 40%;
+  right: 0;
+  bottom: 0;
+}
+
+.w .bottom-2 {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+}
+
+.w .middle-1 {
+  background: black;
+  position: absolute;
+  top: 82%;
+  height: 0.75vw;
+  transform: rotate(-240deg);
+  left: 7%;
+  width: 45%;
+}
+
+.w .middle-2 {
+  position: absolute;
+  background: black;
+  height: 0.75vw;
+  right: 0;
+  left: 28%;
+  width: 45%;
+  top: 82%;
+  transform: rotate(240deg);
+}
+/* X */
+.x .right {
+  background: black;
+  width: 0.75vw;
+  height: 127%;
+  position: absolute;
+  left: 48%;
+  top: -13%;
+  bottom: 0;
+  transform: rotate(38deg);
+  }
+  .x .left {
+    background: black;
+    width: 0.75vw;
+    height: 127%;
+    position: absolute;
+    left: 48%;
+    top: -13%;
+    bottom: 0;
+    transform: rotate(-38deg);
+  }
+  .x .top-right {
+    background: black;
+    height: 0.75vw;
+    width: 25%;
+    top: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .x .top-left {
+    background: black;
+    height: 0.75vw;
+    width: 25%;
+    top: 0;
+    position: absolute;
+    left: 0;
+  }
+
+  .x .bottom-right {
+    background: black;
+    height: 0.75vw;
+    width: 25%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  .x .bottom-left {
+    background: black;
+    height: 0.75vw;
+    width: 25%;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+  }
+  /* Y */
+
+  .y .left {
+    background: black;
+    width: 0.75vw;
+    height: 25%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .y .top-middle {
+    background: black;
+    height: 0.75vw;
+    bottom: 75%;
+    position: absolute;
+    width: 100%;
+  }
+
+  .y .middle {
+    background: black;
+    position: absolute;
+    width: 0.75vw;
+    height: 75%;
+    bottom: 0;
+  }
+
+  .y .right {
+    background: black;
+    width: 0.75vw;
+    height: 25%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  /* Z */
+  .z .top {
+    position: absolute;
+    background: black;
+    height: 0.75vw;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .z .bottom {
+    position: absolute;
+    background: black;
+    height: 0.75vw;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+  }
+
+  .z .middle {
+    background: black;
+    width: 0.75vw;
+    height: 127%;
+    position: absolute;
+    left: 48%;
+    top: -13%;
+    bottom: 0;
+    transform: rotate(38deg);
+  }
