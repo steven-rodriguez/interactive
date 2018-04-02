@@ -1,7 +1,8 @@
-/* .wall {
-  transform-style: preserve-3d;
-  transform: perspective(7.5cm) rotateX(-15deg) rotateY(15deg);
-} */
+.wall {
+  width: 25vw;
+  /* transform-style: preserve-3d;
+  transform: perspective(7.5cm) rotateX(-15deg) rotateY(15deg); */
+}
 
 .letter {
   display: inline-block;
@@ -45,7 +46,7 @@
 /* A */
 .a .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   position: absolute;
   left: 11%;
   top: 0;
@@ -55,7 +56,7 @@
 
 .a .top-middle {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   top: 0;
   left: 21%;
   position: absolute;
@@ -65,14 +66,14 @@
 .a .middle {
   position: absolute;
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   width: 84%;
   left: 15%;
 }
 
 .a .right {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   position: absolute;
   right: 0;
   top: 0;
@@ -81,7 +82,7 @@
 /* b */
 .b .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   position: absolute;
   left: 0;
   top: 0;
@@ -90,7 +91,7 @@
 
 .b .top-middle {
   background: black;
-  height: 0.75vw;
+  height: 0.20vw;
   top: 0;
   left: 0;
   position: absolute;
@@ -101,13 +102,13 @@
   background: black;
   position: absolute;
   top: 25%;
-  height: 0.75vw;
+  height: 0.25vw;
   width: 100%;
 }
 
 .b .right-top {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 25%;
   position: absolute;
   right: 15%;
@@ -117,7 +118,7 @@
 
 .b .right-bottom {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 75%;
   position: absolute;
   right: 0;
@@ -126,7 +127,7 @@
 
 .b .bottom {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -135,7 +136,7 @@
 /* C */
 .c .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   position: absolute;
   left: 0;
   top: 0;
@@ -145,7 +146,7 @@
 
 .c .top-middle {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   top: 0;
   left:5%;
   position: absolute;
@@ -154,7 +155,7 @@
 
 .c .right-top {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 25%;
   position: absolute;
   right: 0;
@@ -164,7 +165,7 @@
 
 .c .right-bottom {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 25%;
   position: absolute;
   right: 0;
@@ -173,7 +174,7 @@
 
 .c .bottom {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -182,7 +183,7 @@
 /* D */
 .d .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 100%;
   position: absolute;
   left: 20%;
@@ -192,7 +193,7 @@
 
 .d .right {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 100%;
   position: absolute;
   right: 0;
@@ -203,7 +204,7 @@
 .d .top {
   position: absolute;
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   width: 100%;
   right: 0;
   left: 0;
@@ -213,7 +214,7 @@
 .d .bottom {
   position: absolute;
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   right: 0;
   left: 0;
   width: 100%;
@@ -226,7 +227,7 @@
   position: absolute;
   top: 0%;
   left: 7%;
-  height: 0.75vw;
+  height: 0.25vw;
   /* transform: rotate(-7deg); */
   width: 94%;
 }
@@ -234,7 +235,7 @@
 .e .middle-2 {
   background: black;
   width: 100%;
-  height: 0.75vw;
+  height: 0.25vw;
   position: absolute;
   left: 0%;
   top: 75%;
@@ -244,7 +245,7 @@
 
 .e .middle-3 {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 82%;
   transform: rotate(76deg);
   position: absolute;
@@ -254,7 +255,7 @@
 
 .e .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 75%;
   position: absolute;
   left: 4%;
@@ -264,7 +265,7 @@
 
 .e .bottom {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -272,7 +273,7 @@
 /* F */
 .f .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   position: absolute;
   left: 0;
   top: 0;
@@ -281,7 +282,7 @@
 
 .f .middle {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   position: absolute;
   bottom: 25%;
   width: 100%;
@@ -290,7 +291,7 @@
 .f .top {
   position: absolute;
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   width: 100%;
   right: 0;
   left: 0;
@@ -299,7 +300,7 @@
 /* G */
 .g .top {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   top: 0;
   position: absolute;
   width: 100%;
@@ -307,7 +308,7 @@
 
 .g .top-right {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   top: 0;
   right: 0;
   position: absolute;
@@ -316,7 +317,7 @@
 
 .g .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   position: absolute;
   left: 0;
   top: 0;
@@ -325,7 +326,7 @@
 
 .g .bottom {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -333,7 +334,7 @@
 
 .g .right {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 50%;
   position: absolute;
   right: 0;
@@ -342,7 +343,7 @@
 
 .g .middle-top {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   bottom: 50%;
   position: absolute;
   width: 50%;
@@ -351,7 +352,7 @@
 /* h */
 .h .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   position: absolute;
   left: 0;
   top: 0;
@@ -360,13 +361,13 @@
 
 .h .middle {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   width: 100%;
 }
 
 .h .right {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   position: absolute;
   right: 0;
   top: 0;
@@ -375,7 +376,7 @@
 /* I */
 .i .top {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   position: absolute;
   right: 0;
   left: 0;
@@ -384,14 +385,14 @@
 
 .i .middle {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 100%;
   margin: 0 auto;
 }
 
 .i .bottom {
   background: black;
-  height: 0.75vw;
+  height: 0.25vw;
   position: absolute;
   right: 0;
   left: 0;
@@ -400,7 +401,7 @@
 /* J */
 .j .right {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 100%;
   position: absolute;
   right: 0;
@@ -411,7 +412,7 @@
 .j .bottom {
   background: black;
   width: 100%;
-  height: 0.75vw;
+  height: 0.25vw;
   position: absolute;
   right: 0;
   left: 0;
@@ -420,7 +421,7 @@
 
 .j .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   bottom: 0;
   position: absolute;
   left: 0;
@@ -431,14 +432,14 @@
   background: black;
   position: absolute;
   top: 33%;
-  height: 0.75vw;
+  height: 0.25vw;
   transform: rotate(-48deg);
   width: 138%;
 }
 
 .k .middle-2 {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 64%;
   position: absolute;
   left: 48%;
@@ -449,7 +450,7 @@
 
 .k .left {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 100%;
   position: absolute;
   left: 0;
@@ -458,7 +459,7 @@
 
 .k .right {
   background: black;
-  width: 0.75vw;
+  width: 0.25vw;
   height: 25%;
   bottom: 0;
   position: absolute;

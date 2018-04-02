@@ -1,0 +1,21 @@
+* {
+ font-family:Monospace;
+ background-color: SkyBlue;
+}
+
+tr {
+  /* border: 1px solid black; */
+  display: block;
+}
+
+table.letter {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+td {
+  color: white;
+  font-size: 100%;
+  /* filter: blur(3px); */
+}
