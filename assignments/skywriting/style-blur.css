@@ -1,0 +1,57 @@
+* {
+  font-family:Monospace;
+  background-color: SkyBlue;
+}
+
+
+.letter-definition {
+	display: none;
+}
+
+tr {
+  /* border: 1px solid black; */
+  display: block;
+}
+
+.letter {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+td {
+  color: white;
+  font-size: 100%;
+  filter: blur(3px);
+  animation: timeblur 50s ;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+#text-destination {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+
+}
+
+#text-input {
+  position: absolute;
+  width: 97%;
+  bottom: 1%;
+  background-color: transparent;
+  border: 0px solid;
+}
+
+@keyframes timeblur {
+0% {
+  filter:blur(3px);
+  opacity: 1;
+}
+
+100% {
+  filter:blur(60px);
+  opacity: 0;
+}
+
+}*/

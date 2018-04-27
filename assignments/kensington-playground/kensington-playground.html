@@ -11,11 +11,29 @@
     padding: 8px;
 }
 
-img {
+.rock {
     width:34%;
     position: absolute;
     bottom: -899px;
     left: -29px;
+    /* z-index: 2; */
+}
+
+.phone {
+    width:34%;
+    position: absolute;
+    bottom: -1300px;
+    right: -25px;
+    z-index: -2;
+}
+
+.kensington-park {
+    width:65%;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    /* bottom: -899px;
+
     /* z-index: 2; */
 }
 
@@ -37,6 +55,9 @@ font: normal 16px/20px Times, serif;
 </head>
 
 <body>
+<img src="images/kensington-park.png" class="kensington-park">
+<img src="images/phone.gif" class="phone">
+
 <div class="center">
 <h2> FM Radio Frequencies in New Haven, CT</h2>
 
@@ -270,6 +291,6 @@ font: normal 16px/20px Times, serif;
 <p> Sourced with help from <a href="https://radio-locator.com/">radio-locator.com</a></p>
 </div>
 
-<img src="images/rock.png">
+<img src="images/rock.png" class="rock">
 </body>
 </html>
